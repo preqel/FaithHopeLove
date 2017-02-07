@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\workforas\FaithHopeLove\FaithHopeLove\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="91a1b1aabf740a6f64c2f73f5b0dc6611779ac8b">
+        <dex dex="F:\workforas\FaithHopeLove\FaithHopeLove\build\intermediates\pre-dexed\debug\android-support-v4-c007a5fbfaa58a58f96e08ae745362962466d07c.jar" />
+    </item>
+
+</items>

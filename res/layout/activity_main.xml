@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.faithhopelove.MainActivity" >
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+     <TextView android:id="@+id/textView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:maxHeight="120dp"
+         android:scrollbars="vertical"
+         android:text="text："
+         android:layout_alignParentTop="true"></TextView>
+    </ScrollView>
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="queryPersonList " />
+
+    
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="17dp"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="20dp"
+        android:text="DELETE" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="16dp"
+        android:text="queryGroup" />
+
+ <Button
+     android:id="@+id/button5"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignLeft="@+id/button4"
+     android:layout_below="@+id/button4"
+     android:layout_marginTop="16dp"
+     android:text="queryPersonList(信实组)" />
+
+</LinearLayout>
