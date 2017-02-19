@@ -9,6 +9,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">FaithHopeLove</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title1">这里是展示结果的地方，点击下方按钮对数据库进行相应的操作</string>
     <!-- From: file:/F:/workforas/FaithHopeLove/FaithHopeLove/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">

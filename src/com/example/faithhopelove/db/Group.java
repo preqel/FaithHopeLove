@@ -6,8 +6,8 @@ public class Group {
 	
 	public static String   ID = GroupColumns.ID ;
 	public static String   GROUP_NAME = GroupColumns.GROUPNAME ;
-	public static String   GROUP1 = "ÐÅÊµ×é" ;
-	public static String   GROUP2 = "ÎÂÈá×é";
-	public static String   GROUP3 = "3×é" ;
+	public static String   GROUP1 = "ä¿¡å®žç»„" ;
+	public static String   GROUP2 = "æ¸©æŸ”ç»„";
+	public static String   GROUP3 = "å…³çˆ±ç»„" ;
 	
 }

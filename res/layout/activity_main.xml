@@ -12,7 +12,7 @@
          android:layout_height="wrap_content"
          android:maxHeight="120dp"
          android:scrollbars="vertical"
-         android:text="text："
+         android:text="@string/title1"
          android:layout_alignParentTop="true"></TextView>
     </ScrollView>
     

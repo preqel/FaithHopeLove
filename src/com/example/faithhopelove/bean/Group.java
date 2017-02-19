@@ -1,6 +1,6 @@
 package com.example.faithhopelove.bean;
 /*
- 组 类
+ 组 bean类
  */
 public class Group {
 
@@ -17,7 +17,7 @@ public class Group {
 
 	@Override
 	public String toString() {
-		return   "name" + name;
+		return   "小组名称：" + name;
 	}
 	
 	
