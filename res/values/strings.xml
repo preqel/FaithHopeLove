@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FaithHopeLove</string>
+    <string name="app_name">android访问数据库</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title1">这里是展示结果的地方，点击下方按钮对数据库进行相应的操作</string>
-
+    <string name="btn1">查询-人员</string>
+    <string name="btn2">增加</string>
+    <string name="btn3">删除</string>
+    <string name="btn4">查询-小组</string>
+    <string name="btn5">查询-小组2</string>
 
 </resources>

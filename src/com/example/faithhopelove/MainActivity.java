@@ -14,7 +14,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/*
+       数据库查询项目，通过封装db层，从而提供了上层接口给后来开发者调用本地数据库。
+       @author  wangkang
 
+ */
 public class MainActivity extends Activity {
 
 	TextView textview ;
@@ -61,7 +65,7 @@ public class MainActivity extends Activity {
 				new DB(v.getContext()).deletePersonByName("mayintao");
 			}
 		});
-		btn4 = (Button) findViewById(R.id.button4);    //查询组信息
+		btn4 = (Button) findViewById(R.id.button4);    //查询小组信息
 		btn4.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -69,12 +73,12 @@ public class MainActivity extends Activity {
 				textview.setText("");
 				ArrayList<Group> arrays =  	new DB(v.getContext()).queryGroupList();
 				for(int i=0;i<arrays.size();i++){
-					Log.d("GROUP",arrays.get(i).toString());
+					//Log.d("GROUP",arrays.get(i).toString());
 					textview.append(arrays.get(i).toString()+"\n");
 				}
 			}
 		});
-		btn5 = (Button) findViewById(R.id.button5);   //查询一个小组下的所有成员
+		btn5 = (Button) findViewById(R.id.button5);   //查询信实组的所有成员
 		btn5.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

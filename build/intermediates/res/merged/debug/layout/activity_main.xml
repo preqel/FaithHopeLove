@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-        android:text="queryPersonList " />
+        android:text="@string/btn1" />
 
     
 
@@ -32,7 +32,7 @@
         android:layout_alignRight="@+id/textView1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="17dp"
-        android:text="ADD" />
+        android:text="@string/btn2" />
 
     <Button
         android:id="@+id/button3"
@@ -41,7 +41,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/button2"
         android:layout_marginTop="20dp"
-        android:text="DELETE" />
+        android:text="@string/btn3" />
 
     <Button
         android:id="@+id/button4"
@@ -50,7 +50,7 @@
         android:layout_alignLeft="@+id/button3"
         android:layout_below="@+id/button3"
         android:layout_marginTop="16dp"
-        android:text="queryGroup" />
+        android:text="@string/btn4" />
 
  <Button
      android:id="@+id/button5"
