@@ -11,7 +11,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
- * @author akang
+ *
  *  所谓跟业务层有关的接口都在这个类当中定义
  */
 public class DB {
@@ -30,24 +30,18 @@ public class DB {
 		return dbhelper.getReadableDB();
 	}
 	
-	/**
-	 * ��ʼ����
-	 */
+
 	protected void beginTransaction() {
 		openW().beginTransaction();
 	}
 	
 
-	/**
-	 * ��������״̬
-	 */
+
 	protected void setTransactionSuccessful() {
 		openW().setTransactionSuccessful();
 	}
 	
-	/**
-	 * �������״̬����������.
-	 */
+
 	protected void endTransaction() {
 		openW().endTransaction();
 	}
@@ -72,16 +66,14 @@ public class DB {
 	 * �ӿ�һ    ���groupid = 0 ���ѯȫ���ģ����⴦�?������Ͱ�groupid��ѯ
 	 */
 	public ArrayList<Person> queryPersonList( int groupid) {
-		String selection = ""; 
-		if(groupid != 0 ) 
-			selection = PersonColumns.GROUPID  + "=" + groupid;
-		
+		String selection = "";
+		if (groupid != 0)
+			selection = PersonColumns.GROUPID + "=" + groupid;
 		Cursor cursor = null;
 		try {
- 			String orderBy = PersonColumns.ID + " desc "; 
-		 
+			String orderBy = PersonColumns.ID + " desc ";
 			cursor = dbhelper.getReadableDB().query(PersonColumns.TABLE_NAME(),
-					PersonColumns.COLUMN_ARRAY, selection , null , null, null, orderBy,
+					PersonColumns.COLUMN_ARRAY, selection, null, null, null, orderBy,
 					null);
 			int count = cursor.getCount();
 			if (count == 0) {
@@ -89,7 +81,7 @@ public class DB {
 			}
 			ArrayList<Person> result = new ArrayList<Person>();
 			while (cursor.moveToNext()) {
- 				Person  person =  getValue(cursor);
+				Person person = getValue(cursor);
 				result.add(person);
 			}
 			return result;

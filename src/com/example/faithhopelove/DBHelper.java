@@ -45,7 +45,7 @@ public class DBHelper {
 	private class DatabaseHelper extends SQLiteOpenHelper{
 		
 		private static final String DATABASE_NAME = "hzbg.db";  //数据库名称
-		private static final int DB_VERSION = 10;
+		private static final int DB_VERSION = 10;     //默认版本号
 		
 		public DatabaseHelper(Context context, String name,
 				CursorFactory factory, int version) {
@@ -58,7 +58,6 @@ public class DBHelper {
 		
 		@Override
 		public void onCreate(SQLiteDatabase db) {
-//			Log.d("TAG","onCreate");
 			db.execSQL(PersonColumns.CREAT_TABLE(PersonColumns.TABLE_NAME()));
 		    db.execSQL(GroupColumns.CREAT_TABLE(GroupColumns.TABLE_NAME()));
 		    initGroup(db, GroupColumns.TABLE_NAME());
@@ -67,7 +66,6 @@ public class DBHelper {
 
 		@Override
 		public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-//			Log.d("TAG","onUpgrade");
 			db.execSQL(PersonColumns.CREAT_TABLE(PersonColumns.TABLE_NAME()));
 		    db.execSQL(GroupColumns.CREAT_TABLE(GroupColumns.TABLE_NAME()));
 		}
@@ -110,14 +108,10 @@ public class DBHelper {
 				values.put(PersonColumns.GROUPID, 1);
 				values.put(PersonColumns.GROUPNAME, "信实组");
  				db.insert(table_NAME, null, values);
- 
- 				
  				db.setTransactionSuccessful();
 		} catch (Exception e) {
 		} finally {
 			db.endTransaction();
 		}
 	}
-		 
-	
 }

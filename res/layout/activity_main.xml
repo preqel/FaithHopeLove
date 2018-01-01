@@ -26,7 +26,7 @@
     
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textView1"
@@ -35,29 +35,29 @@
         android:text="@string/btn2" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/butDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/btnAdd"
         android:layout_marginTop="20dp"
         android:text="@string/btn3" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/butQuery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/butDel"
+        android:layout_below="@+id/butDel"
         android:layout_marginTop="16dp"
         android:text="@string/btn4" />
 
  <Button
-     android:id="@+id/button5"
+     android:id="@+id/butQueryList"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_alignLeft="@+id/button4"
-     android:layout_below="@+id/button4"
+     android:layout_alignLeft="@+id/butQuery"
+     android:layout_below="@+id/butQuery"
      android:layout_marginTop="16dp"
      android:text="queryPersonList(信实组)" />
 
