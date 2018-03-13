@@ -63,7 +63,7 @@ public class DB {
 	}
 	
 	/**
-	 * �ӿ�һ    ���groupid = 0 ���ѯȫ���ģ����⴦�?������Ͱ�groupid��ѯ
+	 * 根据groupid查询人员列表
 	 */
 	public ArrayList<Person> queryPersonList( int groupid) {
 		String selection = "";
@@ -95,7 +95,7 @@ public class DB {
 	
 	
 	/**
-	 * �ӿڶ� ��������Ա
+	 * 添加人员
 	 * @return 
 	 */
 	public boolean insertPerson(Person p ){
@@ -106,7 +106,7 @@ public class DB {
 	
 	
 	/**
-	 * �ӿ���������ɾ�����
+	 * 删除人员
 	 */
 	public  int  deletePersonByName(String name){
 		if(name == null || name.length() <= 0)
@@ -117,7 +117,7 @@ public class DB {
 	
 	
 	/**
-	 * �ӿ��ģ���ѯ������
+	 * 查询团队列表
 	 */
 	public  ArrayList<Group>  queryGroupList( ){
 		Cursor cursor = null;
@@ -140,7 +140,7 @@ public class DB {
 	 
 	
 	/**
-	 * �ӿ���   ���groupid = 0 ���ѯȫ���ģ����⴦�?������Ͱ�groupid��ѯ
+	 * 根据团队名称查询人员列表
 	 */
 	public ArrayList<Person> queryPersonList( String groupname) {
 		String selection = PersonColumns.GROUPNAME + "=? " ;
