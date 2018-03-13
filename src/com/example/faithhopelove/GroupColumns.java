@@ -8,7 +8,7 @@ public class GroupColumns {
 	
 	public static final String ID = "id";  //IDs
 	
-	public static final String GROUPNAME = "name";  //×éÃû
+	public static final String GROUPNAME = "name";  //ç»„å
 	
 	public static final String[] COLUMN_ARRAY = {
 		ID,
