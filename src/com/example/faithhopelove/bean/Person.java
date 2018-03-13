@@ -1,6 +1,6 @@
 package com.example.faithhopelove.bean;
 /*
-/成员 类
+ 成员的bean类
  */
 public class Person {
 	
