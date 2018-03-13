@@ -189,7 +189,7 @@ public class DB {
 	}
 
 	/**
-	 * ���bean
+	 * 获取bean
 	 * 
 	 * @param cursor
 	 * @return
