@@ -29,31 +29,25 @@ public class DB {
 	protected SQLiteDatabase openR() {
 		return dbhelper.getReadableDB();
 	}
-	
 
 	protected void beginTransaction() {
 		openW().beginTransaction();
 	}
-	
-
 
 	protected void setTransactionSuccessful() {
 		openW().setTransactionSuccessful();
 	}
-	
 
 	protected void endTransaction() {
 		openW().endTransaction();
 	}
-	
-	
+
 	protected void close(Cursor c) {
 		if (c != null) {
 			c.close();
 		}
 	}
-	
- 
+
 	public int getCount(Cursor cursor) {
 		return cursor != null ? cursor.getCount() : 0;
 	}
@@ -90,10 +84,7 @@ public class DB {
 			//dbhelper.close(cursor);
 		}
 	}
-	
-	
-	
-	
+
 	/**
 	 * 添加人员
 	 * @return 
@@ -102,9 +93,7 @@ public class DB {
 		ContentValues cv = getValue(p);
 		return dbhelper.getWritableDB().insert(PersonColumns.TABLE_NAME(), PersonColumns.ID, cv)>= 0 ?true:false;
 	}
-	
-	
-	
+
 	/**
 	 * 删除人员
 	 */
@@ -136,9 +125,7 @@ public class DB {
 		}
  
 	}
-	
-	 
-	
+
 	/**
 	 * 根据团队名称查询人员列表
 	 */
@@ -164,14 +151,11 @@ public class DB {
 			dbhelper.closeDB();
 		}
 	}
-	
-	
-	
-	
+
 	/**
 	 * ���ContentValues
 	 * 
-	 * @param chat
+	 * @param person
 	 * @return
 	 */
 	private ContentValues getValue(Person person) {
